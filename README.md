@@ -7,11 +7,13 @@
 > 3.npm start</br>
 
 ### 主要功能介绍 
-1.购物车功能
+#### 1.购物车功能
 
 ![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/5.gif)  
+#### 2.主页
+![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/4.jpg) 
+#### 1.推荐
+![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/2.jpg) 
+#### 1.分类
+![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/3.png)  
 
-![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/5.gif)  
-![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/5.gif)  
-![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/5.gif)  
-![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/5.gif)  

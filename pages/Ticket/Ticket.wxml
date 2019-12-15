@@ -1,0 +1,54 @@
+<!--pages/Ticket/Ticket.wxml-->
+
+<view class='nav-head'>
+  <block wx:for="{{item}}">
+    <view class="nav-head-every {{current==index?'active': ''}}" bindtap='changecolor' data-index='{{index}}' data-name='{{item.name}}'>{{item.name}}</view>
+  </block>
+</view>
+
+<view class='nav-main'>
+  <view class='nav-ticket'>
+    <text class='nav-ticket-message'>￥5</text>
+    <text class='nav-ticket-message-small'>满29元可用</text>
+    <text class='.nav-ticket-message-middle'>2019.09.30-2019.10.10</text>
+  </view>
+</view>
+
+<view class='mymoney'>
+  <image src='../../imgs/b.png'></image>
+  <image src='../../imgs/n.png'></image>
+</view>
+<view class='mymoney'>
+  <view class='moneyword'>余额:￥0.00</view>
+  <view class='moneyword'>银行卡：管理银行卡</view>
+</view>
+
+<view class='bottom-nav'>
+  <view class='bottom-nav-message'>
+    <view>京豆</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <view>优惠券</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <view>礼品卡</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <view>白条</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <view>小白信用</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <view>必购码</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <view>领货码</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <view>膨胀金</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <view>红包</view>
+  </view>
+</view>

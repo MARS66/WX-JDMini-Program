@@ -1,0 +1,199 @@
+/* 顶部 */
+
+.top {
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80rpx;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.top-devers {
+  width: 30rpx;
+}
+
+/* 搜索 */
+
+.top-search {
+  background-color: white;
+  width: 80%;
+  height: 40rpx;
+  border-radius: 20rpx;
+  color: rgb(212, 211, 196);
+  font-size: 13px;
+  display: flex;
+  text-align: center;
+  padding-left: 20rpx;
+}
+
+.search-pic {
+  width: 40rpx;
+}
+
+.top-right {
+  width: 40rpx;
+}
+
+/* 空白块 */
+
+.blo {
+  height: 80rpx;
+}
+
+/* 热搜 */
+
+.top-next {
+  background-color: red;
+  height: 280rpx;
+}
+
+.top-next-top {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  color: white;
+  line-height: 40rpx;
+}
+
+.next-2 {
+  height: 40rpx;
+  width: 130rpx;
+  background-color: rgba(241, 168, 158, 0.541);
+  border-radius: 20rpx;
+  text-align: center;
+}
+
+/* 轮播图 */
+
+.lunbo {
+  margin: -220rpx 50rpx 30rpx;
+  height: 262rpx;
+}
+
+.lunbo-pic {
+  border-radius: 10rpx;
+  width: 100%;
+}
+
+/* 分类入口 */
+
+.swiper-icon {
+  height: 330rpx;
+}
+
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-first {
+  font-size: 12px;
+  width: 100rpx;
+  text-align: center;
+  padding-left: 43rpx;
+}
+
+.icon-pic {
+  width: 80rpx;
+}
+
+/* 广告 */
+
+.ad {
+  width: 95%;
+  padding: 0 20rpx;
+}
+
+/* 广告下方 */
+
+.shose-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shose-info {
+  font-size: 12px;
+  width: 144rpx;
+  text-align: center;
+  color: white;
+  border-radius: 10rpx;
+  /* background-color: rgba(94, 107, 106, 0.404); */
+  border: 1px solid rgba(156, 150, 150, 0.151);
+}
+
+.shose {
+  width: 140rpx;
+}
+
+.description {
+  background: linear-gradient(rgb(142, 11, 194), rgb(49, 1, 68)); /* 标准的语法 */
+}
+
+/* 京喜购物 */
+
+.supgoods {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30rpx;
+  flex-wrap: wrap;
+}
+
+.supgoods-box {
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.supgoods-box text {
+  font-size: 12px;
+  font-weight: normal;
+  color: rgba(255, 0, 0, 0.678);
+}
+
+.block-supgood {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block-supgood-1 {
+  text-align: center;
+  border: 1px solid rgba(156, 150, 150, 0.151);
+}
+
+.supgood-pic {
+  width: 160rpx;
+}
+
+/* 图片下方价格 */
+
+.supgood-description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.supgood-description view {
+  font-size: 8px;
+  background-color: red;
+  color: white;
+  width: 60rpx;
+  height: 28rpx;
+  border-radius: 14rpx;
+  text-align: center;
+  line-height: 28rpx;
+}
+
+.supgood-description text {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.supgood-past {
+  font-size: 10px;
+  color: rgba(114, 119, 122, 0.808);
+  text-decoration: line-through;
+}

@@ -1,0 +1,5 @@
+<!--pages/ad-1/ad-1.wxml-->
+<view>
+  <image src="/imgs/xiaomiad.jpg" mode="widthFix"></image>
+
+</view>

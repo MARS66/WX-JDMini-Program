@@ -1,0 +1,151 @@
+.nav-bar {
+  height: 80rpx;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+
+.nav-scrollV{
+  width: 670rpx;
+}
+.inner-container {
+  width: 1920rpx;
+  display: flex;
+}
+.sort-down{
+  width: 80rpx;
+  height: 70%;
+  margin-top:12rpx; 
+  border-left: 2rpx #edece8 solid;
+}
+.sort-down image{
+  width: 40rpx;
+  margin-top:6rpx; 
+  padding-left: 18rpx;
+}
+.inner-container view {
+  width: 160rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.active{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.header{
+  width: 670rpx;
+  background-color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 50;
+}
+.arrow-container{
+  background-color: white;
+  width: 750rpx;
+  height: 360rpx;
+  position: fixed;
+  border-top: 2rpx #cfcfcf solid;
+  top: 80rpx;
+  left: 0rpx;
+  z-index: 50;
+}
+.i-con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top:20rpx; 
+}
+.sort-item{
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background-color: #f7f7f7;
+  margin: 10rpx;
+  border-radius: 60rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.actived{
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background-color: #fff;
+  margin: 10rpx;
+  border-radius: 60rpx;
+  box-sizing: border-box;
+  color: #ea3838;
+  border: 2rpx #ea3838 solid;
+}
+
+.sort-up{
+  position: fixed;
+  top: 0rpx;
+  left: 670rpx;
+  z-index: 60;
+  background-color: white;
+  height: 80rpx;
+  width: 80rpx;
+  border-left: 2rpx #edece8 solid;
+  border-bottom: 2rpx #edece8 solid;
+}
+.sort-up image{
+  width: 40rpx;
+  margin-left: 18rpx;
+  margin-top: 16rpx;
+}
+
+/* 主体商品部分 */
+.main-content {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.goods {
+  width: 360rpx;
+  height: 540rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: inline-block;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+
+.goods image {
+  width: 360rpx;
+}
+
+.information {
+  width: 330rpx;
+  height: 70rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-left:10rpx; 
+  font-size: 26rpx;
+}
+.text{
+  font-size: 32rpx;
+}
+
+.price {
+  font-size: 26rpx;
+  color: red;
+  margin-top:10rpx; 
+  padding-left:10rpx;
+}
+.price2{
+  font-size: 26rpx;
+  padding-left:10rpx;
+}

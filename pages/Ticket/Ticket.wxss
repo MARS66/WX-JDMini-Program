@@ -1,0 +1,107 @@
+/* pages/Ticket/Ticket.wxss */
+
+.nav-head {
+  width: 750rpx;
+  height: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-head-every {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.active {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.nav-main {
+  width: 750rpx;
+  height: 480px;
+  background-color: #f7f7f4;
+}
+
+.nav-ticket {
+  width: 90%;
+  height: 100px;
+  border-radius: 6px;
+  color: #53c7ca;
+  border-top: 6px solid currentColor;
+  border-bottom: 10px solid #fff;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.nav-ticket-message{
+  color:#21C7DF;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 50px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.nav-ticket-message-small,.nav-ticket-message-middle{
+  color:#21C7DF;
+  font-size: 12px;
+  margin-left: 50px;
+  margin-top: 10px;
+  font-weight: lighter;
+  display: block;
+}
+
+.nav-ticket-message-middle{
+  color: black;
+  margin-left: 150px;
+  margin-top: -15px;
+}
+
+.mymoney{
+  width: 750rpx;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mymoney image{
+  width:40px;
+  height:40px;
+}
+
+.moneyword{
+  font-size: 12px;
+  margin-left: 25px;
+  margin-top: 10px; 
+}
+
+.bottom-nav{
+  width: 750rpx;
+  height: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap; 
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.bottom-nav-message{
+  width:250rpx;
+  height: 60px;
+  line-height: 60px;
+  flex-shrink: 0;
+  background-color: #E9E8EA;
+  color: black;
+}
+
+.bottom-nav image{
+   width: 25px;
+  height: 25px;
+  text-align: center;
+}

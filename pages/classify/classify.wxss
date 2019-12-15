@@ -1,0 +1,157 @@
+/* pages/classify/classify.wxss */
+
+.top-fix {
+  width: 100%;
+  height: 260rpx;
+  position: fixed;
+  z-index: 100;
+  /* background-color: red; */
+}
+
+.text1 {
+  width: 100%;
+  height: 130rpx;
+  font-size: 18px;
+  position: absolute;
+  left: 28rpx;
+  top: 65rpx;
+}
+
+.text2 {
+  /* background-color: black; */
+  width: 100%;
+  height: 130rpx;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  position: absolute;
+  top: 130rpx;
+}
+
+.input-box {
+  background-color: #f6f6f6;
+  width: 96%;
+  height: 76rpx;
+  border-radius: 40rpx;
+  margin: 27rpx auto;
+  text-align: center;
+  line-height: 76rpx;
+}
+
+.search {
+  /* background-color: red; */
+  width: 100%;
+  height: 76rpx;
+}
+
+.img-search {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 299rpx;
+  top: 43rpx;
+}
+
+.search-text {
+  width: 200rpx;
+  font-size: 14px;
+  color: gray;
+  position: absolute;
+  top: 43rpx;
+  left: 46%;
+}
+
+/* 主要内容部分 */
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 260rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.left {
+  height: 100%;
+  font-size: 14px;
+}
+
+.right {
+  height: 100%;
+}
+
+.scroll-l {
+  height: 100%;
+  width: 150rpx;
+  background-color: #f6f6f6;
+}
+
+.scroll-r {
+  height: 100%;
+  width: 600rpx;
+  /* background-color: gold; */
+}
+
+.text {
+  height: 72rpx;
+  text-align: center;
+  padding-top: 30rpx;
+}
+
+.active {
+  color: red;
+  background-color: white;
+  font-size: 16px;
+}
+
+.model {
+  width: 100%;
+  height: 546rpx;
+  /* background-color: blue; */
+  position: relative;
+  display: flex;
+}
+
+.model-title {
+  position: absolute;
+  padding: 28rpx 20rpx;
+}
+
+.onepart {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 80rpx;
+}
+
+.model-line1 {
+  width: 76rpx;
+  height: 150rpx;
+  margin-left: 85rpx;
+  position: relative;
+  text-align: center;
+}
+
+.img-phone {
+  position: absolute;
+  width: 76rpx;
+  top: 26rpx;
+  left: 16rpx;
+
+}
+
+.model-text {
+  position: absolute;
+  font-size: 14px;
+  top: 108rpx;
+  width: 112rpx;
+
+}
+.jin {
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+}

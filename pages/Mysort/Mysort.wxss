@@ -1,0 +1,88 @@
+/* pages/Mysort/Mysort.wxss */
+
+.top-nav,.top-middle-nav,.middle-nav,.middle-bottom-nav,.bottom-nav,.footer{
+  width: 750rpx;
+  height: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.top-nav{
+  background: linear-gradient(to right, #e94057, #f27121);
+  justify-content: flex-start; 
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.top-nav-name,.top-nav-Jing,.top-nav-small{
+  color:white;
+  position:relative; 
+  top: 10px;
+  left:20px;
+}
+
+.top-nav-Jing{
+  top:40px;
+  left:-20px;
+}
+
+.top-nav-small{
+  top:40px;
+  left:20px;
+}
+
+.top-nav image{
+  width:60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.top-middle-nav{
+  margin-top: 30px;
+}
+
+.top-middle-nav image,.middle-nav image,.bottom-nav image{
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.middle-nav .textword,.middle-bottom-nav .textword{
+  font-size: 14px;
+  color: red;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.middle-bottom-nav .textword{
+  color: black;
+}
+
+.bottom-nav{
+  height: 120px;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.bottom-nav-message{
+  width:187.5rpx;
+  flex-shrink: 0;
+}
+
+.footer{
+  margin-top: 30px;
+}
+
+.box{
+  width: 100px;
+  height: 30px;
+  border:none;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 1px rgba(0,0,0,.14);
+  line-height: 30px;
+}

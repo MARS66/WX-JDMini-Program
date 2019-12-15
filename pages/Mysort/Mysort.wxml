@@ -1,0 +1,98 @@
+<!--pages/Mysort/Mysort.wxml-->
+
+<view class='top-nav'>
+  <image src='../../imgs/a.jpg'></image>
+  <view class='top-nav-name'>用户名:{{message.name}}</view>
+  <view class='top-nav-Jing'>京享值:{{message.ticket}}</view>
+  <view class='top-nav-small'>小白信用:71.7</view>
+</view>
+
+<view class='top-middle-nav'>
+  <navigator url='../Order/Order' open-type="navigate">
+    <view class='top-middle-nav-message'>
+      <image src='../../imgs/b.png'></image>
+      <view>待付款</view>
+    </view>
+  </navigator>
+  <navigator url='../Order/Order' open-type="navigate">
+  <view class='top-middle-nav-message'>
+    <image src='../../imgs/c.png'></image>
+    <view>待收货</view>
+  </view>
+  </navigator>
+  <navigator url='../Order/Order' open-type="navigate">
+  <view class='top-middle-nav-message'>
+    <image src='../../imgs/d.png'></image>
+    <view>退换/售后</view>
+  </view>
+  </navigator>
+  <navigator url='../Order/Order' open-type="navigate">
+  <view class='top-middle-nav-message'>
+    <image src='../../imgs/f.png'></image>
+    <view>全部订单</view>
+  </view>
+  </navigator>
+</view>
+
+<view class='middle-nav'>
+  <navigator url='../Ticket/Ticket' open-type='navigate'>
+    <view class='middle-nav-message'>
+      <view class='textword'>{{message.ticket}}张</view>京东券</view>
+  </navigator>
+  <view class='middle-nav-message'>
+    <view class='textword'>开通有礼</view>白条</view>
+  <view class='middle-nav-message'>
+    <view class='textword'>{{message.beans}}个</view>京豆</view>
+  <view class='middle-nav-message'>
+    <view class='textword'>{{message.money}}元</view>红包</view>
+  <view class='middle-nav-message'>
+    <image src='../../imgs/g.png'></image>
+    <view>我的资产</view>
+  </view>
+</view>
+
+<view class='middle-bottom-nav'>
+  <view>
+    <view class='textword'>0</view>商品收藏</view>
+  <view>
+    <view class='textword'>0</view>店铺收藏</view>
+  <view>
+    <view class='textword'>0</view>我的足迹</view>
+</view>
+
+<view class='bottom-nav'>
+  <view class='bottom-nav-message'>
+    <image src='../../imgs/h.png'></image>
+    <view>我的预约</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <image src='../../imgs/i.png'></image>
+    <view>京东火车票</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <image src='../../imgs/j.png'></image>
+    <view>应用推荐</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <image src='../../imgs/l.png'></image>
+    <view>京东通信营业厅</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <image src='../../imgs/m.png'></image>
+    <view>用户福利</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <image src='../../imgs/n.png'></image>
+    <view>京东机票</view>
+  </view>
+  <view class='bottom-nav-message'>
+    <image src='../../imgs/o.png'></image>
+    <view>京东酒店</view>
+  </view>
+</view>
+
+<view class="footer">
+  <view class='box'>客户服务</view>
+  <view class='box'>退出</view>
+  <view class='box'>返回顶部</view>
+</view>

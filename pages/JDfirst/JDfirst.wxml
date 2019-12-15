@@ -1,0 +1,88 @@
+<!--pages/day01/day01.wxml-->
+
+<view class="top">
+  <image class="top-devers" mode="widthFix" src="/imgs/sort2.png">
+  </image>
+
+  <view class="top-search" bindtap="search_turn">
+    <image mode="widthFix" class="search-pic" src="/imgs/serach-1.png"></image>
+    <text>搜索</text>
+  </view>
+  <image mode="widthFix" class="top-right" src="/imgs/juan.png"></image>
+</view>
+<!-- 空白块 -->
+<view class="blo"></view>
+<!-- 热搜 -->
+<view class="top-next">
+  <view class="top-next-top">
+    <text class="next-1">热搜</text>
+    <text class="next-2">男运动鞋</text>
+    <text class="next-2">鬼冢虎</text>
+    <text class="next-2">冲锋衣</text>
+    <text class="next-2">军装</text>
+  </view>
+</view>
+<!-- 轮播图 -->
+<swiper class="lunbo" indicator-dots="true" autoplay="true" circular="true">
+  <block wx:for="{{lunbo_pictures}}">
+    <swiper-item indicator-dots="{{true}}">
+      <image mode="widthFix" class="lunbo-pic" src="{{item.src}}"> </image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 分类入口 -->
+<swiper class="swiper-icon" indicator-dots="true">
+  <block wx:for="{{Icons_3}}">
+    <swiper-item class="icon">
+      <block wx:for="{{Icons_3[index]}}">
+        <view class="icon-first">
+          <image class="icon-pic" mode="widthFix" src="{{item.icon_src}}">
+          </image>
+          <view>{{item.name}}</view>
+        </view>
+      </block>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 广告图片 -->
+<image class="ad" src="/imgs/ad.jpg" mode="widthFix" bindtap="clickad"></image>
+<!-- 广告下方  -->
+<view class="shose-block">
+  <block wx:for="{{PurplePictures}}">
+    <view class="shose-info">
+      <image class="shose" mode="widthFix" src="{{item.word1}}">
+      </image>
+      <view class="description">
+        <view>{{item.img}}</view>
+        <view>{{item.word2}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 京喜购物 -->
+  <view class="supgoods">
+    <block wx:for="{{JDHappy_title}}">
+      <view>
+        <view class="supgoods-box">
+          <view>{{item.word1}}</view>
+          <text>{{item.word2}}</text>
+        </view>
+        <view class="block-supgood">
+          <block wx:for="{{JDHappy_content[index]}}">
+            <view class="block-supgood-1">
+              <image class="supgood-pic" mode="widthFix" src="{{item.img}}">
+              </image>
+              <view class="supgood-description">
+                <view>{{item.people}}人拼</view>
+                <text>￥{{item.new_price}}</text>
+              </view>
+              <view class="supgood-past">￥{{item.past_price}}</view>
+            </view>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+<!-- 广告--2 -->
+<image class="ad" src="/imgs/ad2.jpg" mode="widthFix"></image>
+<!-- 商品推荐 -->

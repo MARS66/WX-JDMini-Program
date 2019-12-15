@@ -1,0 +1,39 @@
+/* pages/Load/Load.wxss */
+
+.name,.password{
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #F7F7F4;
+  padding-left: 50px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.name{
+  margin-top: 100px;
+}
+
+.nav-main{
+  width: 750rpx;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 50px;
+}
+
+.nav-button{
+  width: 80px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 40px;
+  border: none;
+}
+
+.nav-button:nth-child(1){
+  background-color: #FF3C19;
+  color: white;
+}

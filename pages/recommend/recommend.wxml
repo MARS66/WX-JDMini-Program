@@ -1,0 +1,39 @@
+<!-- 导航栏部分 -->
+<view style="height:80rpx;"></view>
+<view class="nav-bar">
+  <scroll-view class="nav-scrollV" scroll-x="{{true}}">
+    <view class="inner-container">
+      <block wx:for='{{navBar}}'>
+        <view bindtap="selectedItem" class="{{id==index?'active':''}}" data-index="{{index}}">{{item}}</view>
+      </block>
+    </view>
+  </scroll-view>
+  <view class="sort-down" bindtap="onClick_down" style="display:{{down}};">
+    <image src="../../imgs/arrow-down.png" mode="widthFix"></image>
+  </view>
+</view>
+<view class="sort-up" bindtap="onClick_up" style="display:{{up}}">
+  <image src="../../imgs/arrow-up.png" mode="widthFix"></image>
+</view>
+<view class="header" style="display:{{up}}">
+  为你推荐以下分类
+</view>
+<view class="arrow-container" style="display:{{up}}">
+  <view class="i-con">
+    <block wx:for="{{navBar}}">
+      <view class="sort-item {{i==index?'actived':''}}" bindtap="selectedItem_s" data-index="{{index}}">{{item}}</view>
+    </block>
+  </view>
+</view>
+<!-- 主体商品部分 -->
+<view class="main-content">
+  <block wx:for='{{data}}'>
+    <view class="goods">
+      <image src="{{item.src}}" mode="widthFix"></image>
+      <view class="information">{{item.information}}</view>
+      <view class="price">2人拼 ￥
+        <text class="text">{{item.price}}</text>{{item.decimalPrice}}</view>
+      <view class="price2">单买价 ￥{{item.anotherPrice}}</view>
+    </view>
+  </block>
+</view>

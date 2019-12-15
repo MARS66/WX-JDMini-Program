@@ -1,0 +1,33 @@
+<!--pages/search/search.wxml-->
+<view class="input-box">
+ <navigator open-type="navigateBack" url="../classify/classify">
+    <image class="img-return" src="/imgs/return.png"></image>
+  </navigator>
+  <input  placeholder="平板电脑苹果"></input>
+</view>
+<!-- 热门搜索 -->
+<view class="hot-search">
+<text class="hhot">热门搜索</text>
+
+<image class="img-eye" src="/imgs/eye.png"></image>
+<text class="text">换一批</text>
+  <view class="flex-box">
+      <view style="color:red">
+      <image class="hot-img" src="/imgs/hot.png"></image>  蓝牙音箱</view>
+    
+      <view style="color:red">
+       <image class="hot-img" src="/imgs/hot.png"></image>行车记录仪</view>
+      <view>液晶电视机</view>
+      <view>投影仪</view>
+      <view>小米</view>
+      <view>男士手表</view>
+      <view>阿迪达斯</view>
+      <view>苹果手机</view>
+      <view>电脑笔记本</view>
+      <view>护肤品</view>
+       <view>华为mate20</view>
+
+
+  
+  </view>
+</view>

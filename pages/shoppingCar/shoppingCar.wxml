@@ -1,0 +1,54 @@
+<scroll-view class="list scroll-view scroll-l" enable-flex="{{true}}" scroll-y>
+
+  <block wx:for="{{dataArr}}" wx:key="index" wx:for-item="item">
+    <view class="li clearfix">
+      <!-- 单品选择按钮 -->
+
+      <image class="check" wx:if="{{item.selected}}" bindtap="selectList" data-index="{{index}}" src='../../imgs/dagou.png'></image>
+      <view class="check" wx:else bindtap="selectList" data-index="{{index}}"></view>
+      <!-- <view class="check" wx:else bindtap="selectList" data-index="{{index}}"><text class="iconfont icon-choose"></text></view> -->
+      <!-- 商品图片 -->
+      <view class='goods_outer'>
+        <view class="img ">
+          <image src="{{item.img}}" mode="aspectFill"></image>
+        </view>
+        <!-- 商品详情 -->
+        <view class="right fr">
+          <view class="title ellipsis-2">{{item.information}}</view>
+          <!-- 增加减少编辑数量 -->
+          <view class="num_w clearfix">
+            <view class="fl" bindtap="reduceCount" data-index="{{index}}">-</view>
+            <view class="fl_num">
+              <input type="number" value="{{item.amount}}" bindinput="inputCount" bindblur="bindblur" data-index="{{index}}" />
+            </view>
+            <view class="fl" bindtap="addCount" data-index="{{index}}">+</view>
+          </view>
+          <view class="price">￥{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+
+  </block>
+
+
+
+</scroll-view>
+<view class="bottom clearfix">
+  <!-- 全选/取消全选按钮 -->
+  <view wx:if="{{selectAllStatus}}" class='selectAllStatus' bindtap="selectAllStatus" data-index="{{index}}">
+    <image class="check" src='../../imgs/dagou.png'></image>
+    <text>全选</text>
+  </view>
+  <view wx:else class="selectAllStatus {{!selectAllStatus?'active': ''}}" bindtap="selectAllStatus" data-index="{{index}}">
+   <view class="check" ></view>
+    <text style='whi'>全选</text>
+  </view>
+  <view class="">
+    <button class="gradientButton  {{!checksbottom?'Buttonactive': ''}}" bindtap="toOrder" data-index="{{index}}">结算</button>
+  </view>
+
+  <!-- 总价 -->
+  <view class="price_fr">合计：
+    <text>￥{{totalPrice}}</text>
+  </view>
+</view>

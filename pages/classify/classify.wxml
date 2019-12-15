@@ -1,0 +1,53 @@
+<!--pages/classify/classify.wxml-->
+
+<!-- 导航固定栏目 -->
+<view class="top-fix">
+  <view class="text1">商品分类</view>
+  <view class="text2">
+    <navigator url="../search/search">
+      <view class="input-box">
+        <view class="search">
+          <image class="img-search" src="/imgs/search.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url="../search/search">
+      <view class="search-text">蓝牙耳机</view>
+    </navigator>
+
+  </view>
+</view>
+
+<!-- 主要部分 -->
+<view class="content">
+  <!-- 左边 -->
+  <view class="left">
+    <scroll-view class="scroll-l" enable-flex="{{true}}" scroll-y>
+      <block wx:for="{{smallTitle}}">
+        <view class="text {{active == index?'active':''}}" bindtap="changeCurrent" data-index="{{index}}">{{item.title}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <!-- 右边 -->
+  <view class="right">
+    <scroll-view class="scroll-r" enable-flex="{{true}}" scroll-y scroll-with-animation="{{true}}" scroll-into-view="item-{{current}}" bindscroll="bindScroll">
+      <block wx:for="{{smallPart}}">
+        <view class="model" id="item-{{index}}">
+          <view class="model-title">{{item.title}}{{index}}</view>
+          <view class="onepart">
+            <block wx:for="{{item.item}}">
+              <view class="model-line1">
+                <image class="img-phone" mode="widthFix" src="{{item.image}}"></image>
+                <view class="model-text">{{item.name}}</view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </block>
+      <view class="jin">已经到底部啦！</view>
+    </scroll-view>
+
+  </view>
+
+
+</view>

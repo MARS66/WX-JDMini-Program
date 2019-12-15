@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/JDfirst/JDfirst",
+    "pages/recommend/recommend",
+    "pages/ad-1/ad-1",
+    "pages/research/research",
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/search/search",
+    "pages/Mysort/Mysort",
+    "pages/shoppingCar/shoppingCar",
+    "pages/logs/logs",
+    "pages/Load/Load"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/JDfirst/JDfirst",
+        "text": "首页",
+        "iconPath": "imgs/mibei.jpg",
+        "selectedIconPath": "imgs/mibei.jpg"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "imgs/sort.png",
+        "selectedIconPath": "imgs/sort-active.png"
+      },
+      {
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "imgs/recommend.png",
+        "selectedIconPath": "imgs/recommend-active.png"
+      },
+      {
+        "pagePath": "pages/shoppingCar/shoppingCar",
+        "text": "购物车",
+        "iconPath": "imgs/shopcar.png",
+        "selectedIconPath": "imgs/shopcar-active.png"
+      },
+      {
+        "pagePath": "pages/Load/Load",
+        "text": "我的",
+        "iconPath": "imgs/mine.png",
+        "selectedIconPath": "imgs/mine-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

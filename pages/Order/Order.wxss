@@ -1,0 +1,45 @@
+/* pages/Order/Order.wxss */
+
+.nav-input{
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #F7F7F4;
+  padding-left: 50px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+image{
+  width:20px;
+  height:20px;
+  position: absolute;
+  left: 50px;
+  top: 15px;
+}
+
+.nav-head{
+  width: 750rpx;
+  height: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around; 
+}
+
+.active{
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.nav-head-every{
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.nav-main{
+  width: 750rpx;
+  height: 480px;
+  background-color: #F7F7F4;
+}

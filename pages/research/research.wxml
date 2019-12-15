@@ -1,0 +1,14 @@
+<!--pages/search/search.wxml-->
+<view class="search-box">
+  <input placeholder="男鞋" confirm-type="search" data-value="value" value="男鞋"></input>
+  <button bindtap="req" class="search-button">搜索</button>
+</view>
+<view class="search_block">
+  <block wx:for="{{misg}}">
+    <view class="search_product">
+      <image class="search_pic" mode="widthFix" src="{{item.img}}"></image>
+      <view class="introduce"> {{item.word2}} </view>
+      <view class="price">{{item.word1}}￥</view>
+    </view>
+  </block>
+</view>

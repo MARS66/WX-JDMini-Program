@@ -1,0 +1,8 @@
+<!--pages/Load/Load.wxml-->
+
+<input class='name' name='username' bindblur='login' placeholder='请输入用户名'/>
+<input class='password' name='userpassword' placeholder='请输入密码'/>
+<view class='nav-main'>
+<button class='nav-button' >登录</button>
+<button class='nav-button'>注册</button>
+</view>

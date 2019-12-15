@@ -1,0 +1,95 @@
+<view class="container">
+<map id="map" longitude="104.07" latitude="30.67" scale="8" controls="{{controls}}" bindcontroltap="controltap" markers=".././imgs/weizhi.png" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 100px;"></map>
+  <form bindsubmit="bindSave">
+
+    <view class="form-box">
+
+      <view class="row-wrap">
+
+        <view class="label">联系人</view>
+
+        <view class="label-right">
+
+          <input name="linkMan" class="input" type="text" placeholder="姓名" value="{{addressData.linkMan}}" />
+
+        </view>
+
+      </view>
+
+      <view class="row-wrap">
+
+        <view class="label">手机号码</view>
+
+        <view class="label-right">
+
+          <input name="mobile" class="input" maxlength="11" type="number" placeholder="11位手机号码" value="{{addressData.mobile}}" />
+
+        </view>
+
+      </view>
+
+      <view class="row-wrap" bindtap="selectCity">
+
+        <view class="label">选择地区</view>
+
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker">
+            {{region[0]}}  {{region[1]}} {{region[2]}}
+          </view>
+     
+      </picker>
+      </view>
+      <view class="addr-details">
+
+        <view class="label">详细地址</view>
+
+        <view class="label-right">
+
+          <!--<input class="input" type="text" placeholder="街道门牌信息"/>-->
+
+          <textarea name="address" auto-height placeholder="街道门牌信息" value="{{addressData.address}}" />
+
+        </view>
+
+      </view>
+
+      <view class="row-wrap">
+
+        <view class="label">邮政编号</view>
+
+        <view class="label-right">
+
+          <input name="code" class="input" placeholder="常用邮政编码"  type="text" value="{{addressData.code}}" />
+
+        </view>
+
+      </view>
+
+      <view class="row-wrap">
+
+        <view class="label">支付方式</view>
+
+        <view class="label-right">
+        <picker class="input" bindchange="bindPickerChange2" value="{{index}}" range="{{array}}">
+            {{array[index]}}</picker>
+        </view>
+
+      </view>
+      <view class="row-wrap">
+
+        <view class="label">支付金额</view>
+
+        <view class="label-right">
+          <view class="input" class='price'> ￥ {{totalPrice}}</view>
+        </view>
+
+      </view>
+
+    </view>
+
+    <button type="warn" class="save-btn" formType="submit" bindtap="bindEnter">立即支付</button>
+    <button type="default" class="cancel-btn" bindtap="bindCancel">取消</button>
+
+  </form>
+
+</view>

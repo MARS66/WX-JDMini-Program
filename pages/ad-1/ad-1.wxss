@@ -1,0 +1,5 @@
+/* pages/ad-1/ad-1.wxss */
+
+image {
+  width: 100%;
+}

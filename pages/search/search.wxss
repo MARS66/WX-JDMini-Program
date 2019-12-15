@@ -1,0 +1,70 @@
+/* pages/search/search.wxss */
+
+.input-box {
+  /* background-color: red; */
+  height: 114rpx;
+  position: relative;
+  font-size: 14px;
+}
+
+.img-return {
+  width: 40rpx;
+  height: 37rpx;
+  position: absolute;
+  left: 12rpx;
+  top: 67rpx;
+}
+
+.input-box input {
+  position: absolute;
+  background-color: #f6f6f6;
+  border-radius: 30rpx;
+  width: 60%;
+  height: 60rpx;
+  bottom: 0rpx;
+  left: 70rpx;
+}
+
+.hot-search {
+  width: 100%;
+  position: relative;
+  top: 40rpx;
+}
+
+.img-eye {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 148rpx;
+  top: 6rpx;
+}
+.hhot {
+  margin-left: 18rpx;
+}
+.text {
+  position: absolute;
+  right: 24rpx;
+  color: red;
+  cursor: pointer;
+}
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hot-img {
+  width: 30rpx;
+  height: 30rpx;
+}
+.flex-box view {
+ height: 60rpx;
+background-color: lavender;
+font-size: 14px;
+text-align: center;
+line-height: 60rpx;
+margin: 18rpx;
+padding-left: 20rpx;
+padding-right: 20rpx;
+border-radius: 6rpx;
+color: gray;
+}

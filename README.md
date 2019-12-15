@@ -5,6 +5,7 @@
 > 1.git clone  <br>
 > 2. 安装依赖 cnpm install </br>
 > 3.npm start</br>
+> 3.记得部署服务器和MySQL哦</br>
 
 ### 主要功能介绍 
 #### 1.购物车功能

@@ -12,8 +12,9 @@
 ![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/5.gif)  
 #### 2.主页
 ![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/4.jpg) 
-#### 1.推荐
+#### 3.推荐
 ![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/2.jpg) 
-#### 1.分类
+#### 4.分类
 ![](https://raw.githubusercontent.com/MARS66/WX-JDMini-Program/master/sc/3.png)  
 
+#### 等..............
